@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="knithModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="EMP">
+    <Key>
+      <PropertyRef Name="ENO" />
+      <PropertyRef Name="Comp_Code" />
+      <PropertyRef Name="ENAME" />
+      <PropertyRef Name="BASIC" />
+    </Key>
+    <Property Name="ENO" Type="Int32" Nullable="false" />
+    <Property Name="Comp_Code" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ENAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FHGName" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="AReg_Sno" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SEX" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Qualification" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DESIGNATION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Emp_Type" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="DOB" Type="DateTime" Precision="3" />
+    <Property Name="DOJ" Type="DateTime" Precision="3" />
+    <Property Name="ADDR1" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="ADDR2" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="ADDR3" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="BASIC" Type="Decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="DA" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="OALL" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="HRA" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="CONV" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="ChdEduAll" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="Incentives" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="OTST" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ITST" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ESIST" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="PFST" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ottype" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="shift" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="OSTAY" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="MOP" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="PFNO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ESINO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PROFTAX" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="WEFROM" Type="DateTime" Precision="0" />
+    <Property Name="EMPSTATUS" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="DOL" Type="DateTime" Precision="3" />
+    <Property Name="Reason" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Remarks" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="compensate" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="TDS" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="TDS_Amt" Type="Double" />
+    <Property Name="PTSts" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Bank_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Bank_Ac" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Bank_Sts" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="LIC_Sts" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="LIC_No" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="LicAmt" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Dept" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="RegDate" Type="DateTime" Precision="3" />
+    <Property Name="MaritalStatus" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CoffStatus" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Grade" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="RFL" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="SSN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="act_gross" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="comp_gross" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Salary" Type="Decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityContainer Name="knithEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EMPs" EntityType="Self.EMP" />
+  </EntityContainer>
+</Schema>

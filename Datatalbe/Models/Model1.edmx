@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="knithModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'knith.dbo.EMP' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="EMP">
+          <Key>
+            <PropertyRef Name="ENO" />
+            <PropertyRef Name="Comp_Code" />
+            <PropertyRef Name="ENAME" />
+            <PropertyRef Name="BASIC" />
+          </Key>
+          <Property Name="ENO" Type="int" Nullable="false" />
+          <Property Name="Comp_Code" Type="varchar" MaxLength="12" Nullable="false" />
+          <Property Name="ENAME" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="FHGName" Type="varchar" MaxLength="80" />
+          <Property Name="AReg_Sno" Type="nvarchar" MaxLength="50" />
+          <Property Name="SEX" Type="char" MaxLength="1" />
+          <Property Name="Qualification" Type="varchar" MaxLength="255" />
+          <Property Name="DESIGNATION" Type="varchar" MaxLength="100" />
+          <Property Name="Emp_Type" Type="char" MaxLength="1" />
+          <Property Name="DOB" Type="datetime" />
+          <Property Name="DOJ" Type="datetime" />
+          <Property Name="ADDR1" Type="varchar" MaxLength="80" />
+          <Property Name="ADDR2" Type="varchar" MaxLength="80" />
+          <Property Name="ADDR3" Type="varchar" MaxLength="80" />
+          <Property Name="phone" Type="varchar" MaxLength="50" />
+          <Property Name="email" Type="varchar" MaxLength="100" />
+          <Property Name="Photo" Type="image" />
+          <Property Name="BASIC" Type="numeric" Precision="12" Scale="2" Nullable="false" />
+          <Property Name="DA" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="OALL" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="HRA" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="CONV" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="ChdEduAll" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="Incentives" Type="char" MaxLength="1" />
+          <Property Name="OTST" Type="char" MaxLength="1" />
+          <Property Name="ITST" Type="char" MaxLength="1" />
+          <Property Name="ESIST" Type="char" MaxLength="1" />
+          <Property Name="PFST" Type="char" MaxLength="1" />
+          <Property Name="ottype" Type="char" MaxLength="1" />
+          <Property Name="shift" Type="char" MaxLength="1" />
+          <Property Name="OSTAY" Type="char" MaxLength="1" />
+          <Property Name="MOP" Type="char" MaxLength="1" />
+          <Property Name="PFNO" Type="varchar" MaxLength="50" />
+          <Property Name="ESINO" Type="varchar" MaxLength="50" />
+          <Property Name="PROFTAX" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="WEFROM" Type="smalldatetime" />
+          <Property Name="EMPSTATUS" Type="char" MaxLength="1" />
+          <Property Name="DOL" Type="datetime" />
+          <Property Name="Reason" Type="varchar" MaxLength="250" />
+          <Property Name="Remarks" Type="varchar" MaxLength="250" />
+          <Property Name="compensate" Type="char" MaxLength="1" />
+          <Property Name="TDS" Type="char" MaxLength="1" />
+          <Property Name="TDS_Amt" Type="float" />
+          <Property Name="PTSts" Type="char" MaxLength="1" />
+          <Property Name="Bank_Name" Type="varchar" MaxLength="50" />
+          <Property Name="Bank_Ac" Type="varchar" MaxLength="50" />
+          <Property Name="Bank_Sts" Type="char" MaxLength="1" />
+          <Property Name="LIC_Sts" Type="char" MaxLength="1" />
+          <Property Name="LIC_No" Type="varchar" MaxLength="150" />
+          <Property Name="LicAmt" Type="numeric" Precision="18" Scale="2" />
+          <Property Name="Dept" Type="varchar" MaxLength="100" />
+          <Property Name="RegDate" Type="datetime" />
+          <Property Name="MaritalStatus" Type="varchar" MaxLength="10" />
+          <Property Name="CoffStatus" Type="varchar" MaxLength="1" />
+          <Property Name="Grade" Type="varchar" MaxLength="5" />
+          <Property Name="RFL" Type="varchar" MaxLength="1" />
+          <Property Name="SSN" Type="varchar" MaxLength="50" />
+          <Property Name="act_gross" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="comp_gross" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="Salary" Type="decimal" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityContainer Name="knithModelStoreContainer">
+          <EntitySet Name="EMP" EntityType="Self.EMP" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [EMP].[ENO] AS [ENO], 
+    [EMP].[Comp_Code] AS [Comp_Code], 
+    [EMP].[ENAME] AS [ENAME], 
+    [EMP].[FHGName] AS [FHGName], 
+    [EMP].[AReg_Sno] AS [AReg_Sno], 
+    [EMP].[SEX] AS [SEX], 
+    [EMP].[Qualification] AS [Qualification], 
+    [EMP].[DESIGNATION] AS [DESIGNATION], 
+    [EMP].[Emp_Type] AS [Emp_Type], 
+    [EMP].[DOB] AS [DOB], 
+    [EMP].[DOJ] AS [DOJ], 
+    [EMP].[ADDR1] AS [ADDR1], 
+    [EMP].[ADDR2] AS [ADDR2], 
+    [EMP].[ADDR3] AS [ADDR3], 
+    [EMP].[phone] AS [phone], 
+    [EMP].[email] AS [email], 
+    [EMP].[Photo] AS [Photo], 
+    [EMP].[BASIC] AS [BASIC], 
+    [EMP].[DA] AS [DA], 
+    [EMP].[OALL] AS [OALL], 
+    [EMP].[HRA] AS [HRA], 
+    [EMP].[CONV] AS [CONV], 
+    [EMP].[ChdEduAll] AS [ChdEduAll], 
+    [EMP].[Incentives] AS [Incentives], 
+    [EMP].[OTST] AS [OTST], 
+    [EMP].[ITST] AS [ITST], 
+    [EMP].[ESIST] AS [ESIST], 
+    [EMP].[PFST] AS [PFST], 
+    [EMP].[ottype] AS [ottype], 
+    [EMP].[shift] AS [shift], 
+    [EMP].[OSTAY] AS [OSTAY], 
+    [EMP].[MOP] AS [MOP], 
+    [EMP].[PFNO] AS [PFNO], 
+    [EMP].[ESINO] AS [ESINO], 
+    [EMP].[PROFTAX] AS [PROFTAX], 
+    [EMP].[WEFROM] AS [WEFROM], 
+    [EMP].[EMPSTATUS] AS [EMPSTATUS], 
+    [EMP].[DOL] AS [DOL], 
+    [EMP].[Reason] AS [Reason], 
+    [EMP].[Remarks] AS [Remarks], 
+    [EMP].[compensate] AS [compensate], 
+    [EMP].[TDS] AS [TDS], 
+    [EMP].[TDS_Amt] AS [TDS_Amt], 
+    [EMP].[PTSts] AS [PTSts], 
+    [EMP].[Bank_Name] AS [Bank_Name], 
+    [EMP].[Bank_Ac] AS [Bank_Ac], 
+    [EMP].[Bank_Sts] AS [Bank_Sts], 
+    [EMP].[LIC_Sts] AS [LIC_Sts], 
+    [EMP].[LIC_No] AS [LIC_No], 
+    [EMP].[LicAmt] AS [LicAmt], 
+    [EMP].[Dept] AS [Dept], 
+    [EMP].[RegDate] AS [RegDate], 
+    [EMP].[MaritalStatus] AS [MaritalStatus], 
+    [EMP].[CoffStatus] AS [CoffStatus], 
+    [EMP].[Grade] AS [Grade], 
+    [EMP].[RFL] AS [RFL], 
+    [EMP].[SSN] AS [SSN], 
+    [EMP].[act_gross] AS [act_gross], 
+    [EMP].[comp_gross] AS [comp_gross], 
+    [EMP].[Salary] AS [Salary]
+    FROM [dbo].[EMP] AS [EMP]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="knithModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="EMP">
+          <Key>
+            <PropertyRef Name="ENO" />
+            <PropertyRef Name="Comp_Code" />
+            <PropertyRef Name="ENAME" />
+            <PropertyRef Name="BASIC" />
+          </Key>
+          <Property Name="ENO" Type="Int32" Nullable="false" />
+          <Property Name="Comp_Code" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ENAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FHGName" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="AReg_Sno" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SEX" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="Qualification" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DESIGNATION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Emp_Type" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="DOB" Type="DateTime" Precision="3" />
+          <Property Name="DOJ" Type="DateTime" Precision="3" />
+          <Property Name="ADDR1" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="ADDR2" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="ADDR3" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="BASIC" Type="Decimal" Precision="12" Scale="2" Nullable="false" />
+          <Property Name="DA" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="OALL" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="HRA" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="CONV" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="ChdEduAll" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="Incentives" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="OTST" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="ITST" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="ESIST" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="PFST" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="ottype" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="shift" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="OSTAY" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="MOP" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="PFNO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ESINO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PROFTAX" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="WEFROM" Type="DateTime" Precision="0" />
+          <Property Name="EMPSTATUS" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="DOL" Type="DateTime" Precision="3" />
+          <Property Name="Reason" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Remarks" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="compensate" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="TDS" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="TDS_Amt" Type="Double" />
+          <Property Name="PTSts" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="Bank_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Bank_Ac" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Bank_Sts" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="LIC_Sts" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="LIC_No" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="LicAmt" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Dept" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="RegDate" Type="DateTime" Precision="3" />
+          <Property Name="MaritalStatus" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="CoffStatus" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="Grade" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="RFL" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="SSN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="act_gross" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="comp_gross" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Salary" Type="Decimal" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityContainer Name="knithEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="EMPs" EntityType="Self.EMP" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="knithModelStoreContainer" CdmEntityContainer="knithEntities">
+          <EntitySetMapping Name="EMPs">
+            <EntityTypeMapping TypeName="knithModel.EMP">
+              <MappingFragment StoreEntitySet="EMP">
+                <ScalarProperty Name="ENO" ColumnName="ENO" />
+                <ScalarProperty Name="Comp_Code" ColumnName="Comp_Code" />
+                <ScalarProperty Name="ENAME" ColumnName="ENAME" />
+                <ScalarProperty Name="FHGName" ColumnName="FHGName" />
+                <ScalarProperty Name="AReg_Sno" ColumnName="AReg_Sno" />
+                <ScalarProperty Name="SEX" ColumnName="SEX" />
+                <ScalarProperty Name="Qualification" ColumnName="Qualification" />
+                <ScalarProperty Name="DESIGNATION" ColumnName="DESIGNATION" />
+                <ScalarProperty Name="Emp_Type" ColumnName="Emp_Type" />
+                <ScalarProperty Name="DOB" ColumnName="DOB" />
+                <ScalarProperty Name="DOJ" ColumnName="DOJ" />
+                <ScalarProperty Name="ADDR1" ColumnName="ADDR1" />
+                <ScalarProperty Name="ADDR2" ColumnName="ADDR2" />
+                <ScalarProperty Name="ADDR3" ColumnName="ADDR3" />
+                <ScalarProperty Name="phone" ColumnName="phone" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
+                <ScalarProperty Name="BASIC" ColumnName="BASIC" />
+                <ScalarProperty Name="DA" ColumnName="DA" />
+                <ScalarProperty Name="OALL" ColumnName="OALL" />
+                <ScalarProperty Name="HRA" ColumnName="HRA" />
+                <ScalarProperty Name="CONV" ColumnName="CONV" />
+                <ScalarProperty Name="ChdEduAll" ColumnName="ChdEduAll" />
+                <ScalarProperty Name="Incentives" ColumnName="Incentives" />
+                <ScalarProperty Name="OTST" ColumnName="OTST" />
+                <ScalarProperty Name="ITST" ColumnName="ITST" />
+                <ScalarProperty Name="ESIST" ColumnName="ESIST" />
+                <ScalarProperty Name="PFST" ColumnName="PFST" />
+                <ScalarProperty Name="ottype" ColumnName="ottype" />
+                <ScalarProperty Name="shift" ColumnName="shift" />
+                <ScalarProperty Name="OSTAY" ColumnName="OSTAY" />
+                <ScalarProperty Name="MOP" ColumnName="MOP" />
+                <ScalarProperty Name="PFNO" ColumnName="PFNO" />
+                <ScalarProperty Name="ESINO" ColumnName="ESINO" />
+                <ScalarProperty Name="PROFTAX" ColumnName="PROFTAX" />
+                <ScalarProperty Name="WEFROM" ColumnName="WEFROM" />
+                <ScalarProperty Name="EMPSTATUS" ColumnName="EMPSTATUS" />
+                <ScalarProperty Name="DOL" ColumnName="DOL" />
+                <ScalarProperty Name="Reason" ColumnName="Reason" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="compensate" ColumnName="compensate" />
+                <ScalarProperty Name="TDS" ColumnName="TDS" />
+                <ScalarProperty Name="TDS_Amt" ColumnName="TDS_Amt" />
+                <ScalarProperty Name="PTSts" ColumnName="PTSts" />
+                <ScalarProperty Name="Bank_Name" ColumnName="Bank_Name" />
+                <ScalarProperty Name="Bank_Ac" ColumnName="Bank_Ac" />
+                <ScalarProperty Name="Bank_Sts" ColumnName="Bank_Sts" />
+                <ScalarProperty Name="LIC_Sts" ColumnName="LIC_Sts" />
+                <ScalarProperty Name="LIC_No" ColumnName="LIC_No" />
+                <ScalarProperty Name="LicAmt" ColumnName="LicAmt" />
+                <ScalarProperty Name="Dept" ColumnName="Dept" />
+                <ScalarProperty Name="RegDate" ColumnName="RegDate" />
+                <ScalarProperty Name="MaritalStatus" ColumnName="MaritalStatus" />
+                <ScalarProperty Name="CoffStatus" ColumnName="CoffStatus" />
+                <ScalarProperty Name="Grade" ColumnName="Grade" />
+                <ScalarProperty Name="RFL" ColumnName="RFL" />
+                <ScalarProperty Name="SSN" ColumnName="SSN" />
+                <ScalarProperty Name="act_gross" ColumnName="act_gross" />
+                <ScalarProperty Name="comp_gross" ColumnName="comp_gross" />
+                <ScalarProperty Name="Salary" ColumnName="Salary" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="knithModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'knith.dbo.EMP' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="EMP">
+    <Key>
+      <PropertyRef Name="ENO" />
+      <PropertyRef Name="Comp_Code" />
+      <PropertyRef Name="ENAME" />
+      <PropertyRef Name="BASIC" />
+    </Key>
+    <Property Name="ENO" Type="int" Nullable="false" />
+    <Property Name="Comp_Code" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="ENAME" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FHGName" Type="varchar" MaxLength="80" />
+    <Property Name="AReg_Sno" Type="nvarchar" MaxLength="50" />
+    <Property Name="SEX" Type="char" MaxLength="1" />
+    <Property Name="Qualification" Type="varchar" MaxLength="255" />
+    <Property Name="DESIGNATION" Type="varchar" MaxLength="100" />
+    <Property Name="Emp_Type" Type="char" MaxLength="1" />
+    <Property Name="DOB" Type="datetime" />
+    <Property Name="DOJ" Type="datetime" />
+    <Property Name="ADDR1" Type="varchar" MaxLength="80" />
+    <Property Name="ADDR2" Type="varchar" MaxLength="80" />
+    <Property Name="ADDR3" Type="varchar" MaxLength="80" />
+    <Property Name="phone" Type="varchar" MaxLength="50" />
+    <Property Name="email" Type="varchar" MaxLength="100" />
+    <Property Name="Photo" Type="image" />
+    <Property Name="BASIC" Type="numeric" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="DA" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="OALL" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="HRA" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="CONV" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="ChdEduAll" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="Incentives" Type="char" MaxLength="1" />
+    <Property Name="OTST" Type="char" MaxLength="1" />
+    <Property Name="ITST" Type="char" MaxLength="1" />
+    <Property Name="ESIST" Type="char" MaxLength="1" />
+    <Property Name="PFST" Type="char" MaxLength="1" />
+    <Property Name="ottype" Type="char" MaxLength="1" />
+    <Property Name="shift" Type="char" MaxLength="1" />
+    <Property Name="OSTAY" Type="char" MaxLength="1" />
+    <Property Name="MOP" Type="char" MaxLength="1" />
+    <Property Name="PFNO" Type="varchar" MaxLength="50" />
+    <Property Name="ESINO" Type="varchar" MaxLength="50" />
+    <Property Name="PROFTAX" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="WEFROM" Type="smalldatetime" />
+    <Property Name="EMPSTATUS" Type="char" MaxLength="1" />
+    <Property Name="DOL" Type="datetime" />
+    <Property Name="Reason" Type="varchar" MaxLength="250" />
+    <Property Name="Remarks" Type="varchar" MaxLength="250" />
+    <Property Name="compensate" Type="char" MaxLength="1" />
+    <Property Name="TDS" Type="char" MaxLength="1" />
+    <Property Name="TDS_Amt" Type="float" />
+    <Property Name="PTSts" Type="char" MaxLength="1" />
+    <Property Name="Bank_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Bank_Ac" Type="varchar" MaxLength="50" />
+    <Property Name="Bank_Sts" Type="char" MaxLength="1" />
+    <Property Name="LIC_Sts" Type="char" MaxLength="1" />
+    <Property Name="LIC_No" Type="varchar" MaxLength="150" />
+    <Property Name="LicAmt" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="Dept" Type="varchar" MaxLength="100" />
+    <Property Name="RegDate" Type="datetime" />
+    <Property Name="MaritalStatus" Type="varchar" MaxLength="10" />
+    <Property Name="CoffStatus" Type="varchar" MaxLength="1" />
+    <Property Name="Grade" Type="varchar" MaxLength="5" />
+    <Property Name="RFL" Type="varchar" MaxLength="1" />
+    <Property Name="SSN" Type="varchar" MaxLength="50" />
+    <Property Name="act_gross" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="comp_gross" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Salary" Type="decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityContainer Name="knithModelStoreContainer">
+    <EntitySet Name="EMP" EntityType="Self.EMP" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [EMP].[ENO] AS [ENO], 
+    [EMP].[Comp_Code] AS [Comp_Code], 
+    [EMP].[ENAME] AS [ENAME], 
+    [EMP].[FHGName] AS [FHGName], 
+    [EMP].[AReg_Sno] AS [AReg_Sno], 
+    [EMP].[SEX] AS [SEX], 
+    [EMP].[Qualification] AS [Qualification], 
+    [EMP].[DESIGNATION] AS [DESIGNATION], 
+    [EMP].[Emp_Type] AS [Emp_Type], 
+    [EMP].[DOB] AS [DOB], 
+    [EMP].[DOJ] AS [DOJ], 
+    [EMP].[ADDR1] AS [ADDR1], 
+    [EMP].[ADDR2] AS [ADDR2], 
+    [EMP].[ADDR3] AS [ADDR3], 
+    [EMP].[phone] AS [phone], 
+    [EMP].[email] AS [email], 
+    [EMP].[Photo] AS [Photo], 
+    [EMP].[BASIC] AS [BASIC], 
+    [EMP].[DA] AS [DA], 
+    [EMP].[OALL] AS [OALL], 
+    [EMP].[HRA] AS [HRA], 
+    [EMP].[CONV] AS [CONV], 
+    [EMP].[ChdEduAll] AS [ChdEduAll], 
+    [EMP].[Incentives] AS [Incentives], 
+    [EMP].[OTST] AS [OTST], 
+    [EMP].[ITST] AS [ITST], 
+    [EMP].[ESIST] AS [ESIST], 
+    [EMP].[PFST] AS [PFST], 
+    [EMP].[ottype] AS [ottype], 
+    [EMP].[shift] AS [shift], 
+    [EMP].[OSTAY] AS [OSTAY], 
+    [EMP].[MOP] AS [MOP], 
+    [EMP].[PFNO] AS [PFNO], 
+    [EMP].[ESINO] AS [ESINO], 
+    [EMP].[PROFTAX] AS [PROFTAX], 
+    [EMP].[WEFROM] AS [WEFROM], 
+    [EMP].[EMPSTATUS] AS [EMPSTATUS], 
+    [EMP].[DOL] AS [DOL], 
+    [EMP].[Reason] AS [Reason], 
+    [EMP].[Remarks] AS [Remarks], 
+    [EMP].[compensate] AS [compensate], 
+    [EMP].[TDS] AS [TDS], 
+    [EMP].[TDS_Amt] AS [TDS_Amt], 
+    [EMP].[PTSts] AS [PTSts], 
+    [EMP].[Bank_Name] AS [Bank_Name], 
+    [EMP].[Bank_Ac] AS [Bank_Ac], 
+    [EMP].[Bank_Sts] AS [Bank_Sts], 
+    [EMP].[LIC_Sts] AS [LIC_Sts], 
+    [EMP].[LIC_No] AS [LIC_No], 
+    [EMP].[LicAmt] AS [LicAmt], 
+    [EMP].[Dept] AS [Dept], 
+    [EMP].[RegDate] AS [RegDate], 
+    [EMP].[MaritalStatus] AS [MaritalStatus], 
+    [EMP].[CoffStatus] AS [CoffStatus], 
+    [EMP].[Grade] AS [Grade], 
+    [EMP].[RFL] AS [RFL], 
+    [EMP].[SSN] AS [SSN], 
+    [EMP].[act_gross] AS [act_gross], 
+    [EMP].[comp_gross] AS [comp_gross], 
+    [EMP].[Salary] AS [Salary]
+    FROM [dbo].[EMP] AS [EMP]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

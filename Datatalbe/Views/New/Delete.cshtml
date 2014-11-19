@@ -1,0 +1,472 @@
+﻿@model Datatalbe.Models.EMP
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>EMP</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FHGName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FHGName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AReg_Sno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AReg_Sno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SEX)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SEX)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Qualification)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Qualification)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DESIGNATION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DESIGNATION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Emp_Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Emp_Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DOB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DOB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DOJ)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DOJ)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ADDR1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ADDR1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ADDR2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ADDR2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ADDR3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ADDR3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Photo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Photo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OALL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OALL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HRA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HRA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CONV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CONV)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChdEduAll)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChdEduAll)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Incentives)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Incentives)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OTST)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OTST)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ITST)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ITST)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ESIST)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ESIST)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PFST)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PFST)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ottype)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ottype)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.shift)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.shift)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OSTAY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OSTAY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MOP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MOP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PFNO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PFNO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ESINO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ESINO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PROFTAX)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PROFTAX)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WEFROM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WEFROM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMPSTATUS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMPSTATUS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DOL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DOL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Reason)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Reason)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Remarks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Remarks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.compensate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.compensate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TDS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TDS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TDS_Amt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TDS_Amt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PTSts)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PTSts)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bank_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bank_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bank_Ac)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bank_Ac)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bank_Sts)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bank_Sts)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LIC_Sts)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LIC_Sts)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LIC_No)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LIC_No)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LicAmt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LicAmt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dept)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dept)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RegDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaritalStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaritalStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CoffStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CoffStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Grade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Grade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RFL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RFL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SSN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SSN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.act_gross)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.act_gross)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.comp_gross)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.comp_gross)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Salary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Salary)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

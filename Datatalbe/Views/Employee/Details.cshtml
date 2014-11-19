@@ -1,0 +1,58 @@
+﻿@model Datatalbe.Models.Employee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Employee</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.eName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.eName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.eCell)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.eCell)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ePhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ePhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.eEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.eEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,387 @@
+﻿@model IEnumerable<Datatalbe.Models.EMP>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>DataTables Bootstrap 3 example</title>
+    @*<h2>Index</h2>*@
+
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+
+    <script type="text/javascript" charset="utf-8">
+        //$(document).ready(function () {
+        //    $('#example').dataTable();
+        //});
+    </script>
+</head>
+<body>
+    <div class="container">
+        <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="example">
+            <thead>
+                <tr class="odd gradeX">
+                    <th>
+                        @Html.DisplayNameFor(model => model.FHGName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.AReg_Sno)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.SEX)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Qualification)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DESIGNATION)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Emp_Type)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DOB)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DOJ)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ADDR1)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ADDR2)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ADDR3)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.phone)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.email)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Photo)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DA)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.OALL)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.HRA)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.CONV)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ChdEduAll)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Incentives)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.OTST)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ITST)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ESIST)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PFST)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ottype)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.shift)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.OSTAY)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.MOP)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PFNO)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ESINO)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PROFTAX)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.WEFROM)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.EMPSTATUS)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DOL)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Reason)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Remarks)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.compensate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TDS)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TDS_Amt)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PTSts)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Bank_Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Bank_Ac)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Bank_Sts)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.LIC_Sts)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.LIC_No)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.LicAmt)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Dept)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.RegDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.MaritalStatus)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.CoffStatus)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Grade)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.RFL)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.SSN)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.act_gross)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.comp_gross)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Salary)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FHGName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AReg_Sno)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SEX)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Qualification)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DESIGNATION)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Emp_Type)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DOB)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DOJ)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ADDR1)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ADDR2)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ADDR3)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.phone)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Photo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DA)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.OALL)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.HRA)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CONV)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ChdEduAll)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Incentives)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.OTST)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ITST)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ESIST)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PFST)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ottype)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.shift)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.OSTAY)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.MOP)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PFNO)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ESINO)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PROFTAX)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.WEFROM)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EMPSTATUS)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DOL)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Reason)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Remarks)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.compensate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TDS)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TDS_Amt)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PTSts)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Bank_Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Bank_Ac)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Bank_Sts)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LIC_Sts)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LIC_No)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LicAmt)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Dept)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.RegDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.MaritalStatus)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CoffStatus)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Grade)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.RFL)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SSN)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.act_gross)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.comp_gross)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Salary)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                        </td>
+                    </tr>
+
+                }
+            </tbody>
+
+        </table>
+    </div>
+</body>
+</html>

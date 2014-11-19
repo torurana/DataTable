@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="knithModelStoreContainer" CdmEntityContainer="knithEntities">
+    <EntitySetMapping Name="EMPs">
+      <EntityTypeMapping TypeName="knithModel.EMP">
+        <MappingFragment StoreEntitySet="EMP">
+          <ScalarProperty Name="ENO" ColumnName="ENO" />
+          <ScalarProperty Name="Comp_Code" ColumnName="Comp_Code" />
+          <ScalarProperty Name="ENAME" ColumnName="ENAME" />
+          <ScalarProperty Name="FHGName" ColumnName="FHGName" />
+          <ScalarProperty Name="AReg_Sno" ColumnName="AReg_Sno" />
+          <ScalarProperty Name="SEX" ColumnName="SEX" />
+          <ScalarProperty Name="Qualification" ColumnName="Qualification" />
+          <ScalarProperty Name="DESIGNATION" ColumnName="DESIGNATION" />
+          <ScalarProperty Name="Emp_Type" ColumnName="Emp_Type" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="DOJ" ColumnName="DOJ" />
+          <ScalarProperty Name="ADDR1" ColumnName="ADDR1" />
+          <ScalarProperty Name="ADDR2" ColumnName="ADDR2" />
+          <ScalarProperty Name="ADDR3" ColumnName="ADDR3" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="BASIC" ColumnName="BASIC" />
+          <ScalarProperty Name="DA" ColumnName="DA" />
+          <ScalarProperty Name="OALL" ColumnName="OALL" />
+          <ScalarProperty Name="HRA" ColumnName="HRA" />
+          <ScalarProperty Name="CONV" ColumnName="CONV" />
+          <ScalarProperty Name="ChdEduAll" ColumnName="ChdEduAll" />
+          <ScalarProperty Name="Incentives" ColumnName="Incentives" />
+          <ScalarProperty Name="OTST" ColumnName="OTST" />
+          <ScalarProperty Name="ITST" ColumnName="ITST" />
+          <ScalarProperty Name="ESIST" ColumnName="ESIST" />
+          <ScalarProperty Name="PFST" ColumnName="PFST" />
+          <ScalarProperty Name="ottype" ColumnName="ottype" />
+          <ScalarProperty Name="shift" ColumnName="shift" />
+          <ScalarProperty Name="OSTAY" ColumnName="OSTAY" />
+          <ScalarProperty Name="MOP" ColumnName="MOP" />
+          <ScalarProperty Name="PFNO" ColumnName="PFNO" />
+          <ScalarProperty Name="ESINO" ColumnName="ESINO" />
+          <ScalarProperty Name="PROFTAX" ColumnName="PROFTAX" />
+          <ScalarProperty Name="WEFROM" ColumnName="WEFROM" />
+          <ScalarProperty Name="EMPSTATUS" ColumnName="EMPSTATUS" />
+          <ScalarProperty Name="DOL" ColumnName="DOL" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="compensate" ColumnName="compensate" />
+          <ScalarProperty Name="TDS" ColumnName="TDS" />
+          <ScalarProperty Name="TDS_Amt" ColumnName="TDS_Amt" />
+          <ScalarProperty Name="PTSts" ColumnName="PTSts" />
+          <ScalarProperty Name="Bank_Name" ColumnName="Bank_Name" />
+          <ScalarProperty Name="Bank_Ac" ColumnName="Bank_Ac" />
+          <ScalarProperty Name="Bank_Sts" ColumnName="Bank_Sts" />
+          <ScalarProperty Name="LIC_Sts" ColumnName="LIC_Sts" />
+          <ScalarProperty Name="LIC_No" ColumnName="LIC_No" />
+          <ScalarProperty Name="LicAmt" ColumnName="LicAmt" />
+          <ScalarProperty Name="Dept" ColumnName="Dept" />
+          <ScalarProperty Name="RegDate" ColumnName="RegDate" />
+          <ScalarProperty Name="MaritalStatus" ColumnName="MaritalStatus" />
+          <ScalarProperty Name="CoffStatus" ColumnName="CoffStatus" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="RFL" ColumnName="RFL" />
+          <ScalarProperty Name="SSN" ColumnName="SSN" />
+          <ScalarProperty Name="act_gross" ColumnName="act_gross" />
+          <ScalarProperty Name="comp_gross" ColumnName="comp_gross" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

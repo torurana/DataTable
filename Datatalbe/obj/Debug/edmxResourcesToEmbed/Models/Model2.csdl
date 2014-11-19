@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GermentsDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Depertment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="dName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="eName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="eCell" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ePhone" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="eEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="dId" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="GermentsDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Depertments" EntityType="Self.Depertment" />
+    <EntitySet Name="Employees" EntityType="Self.Employee" />
+  </EntityContainer>
+</Schema>
